@@ -1,0 +1,188 @@
+@media (min-width: 768px) and (max-width: 1439.98px) { 
+
+/************************************************************************************************************************
+                                                 HEADER
+************************************************************************************************************************/
+.container {
+    max-width: 748px;
+}
+
+.header__menu {
+    padding-top: 40px;
+    padding-right: 42px;
+    padding-left: 38px;
+}
+
+.header__link-active {
+    padding: 8px 15px;;
+}
+
+.header__center {
+    padding: 146px 137px 0 137px;
+}
+
+/******************************
+        Dreamshare
+******************************/
+.dreamshare {
+    padding-top: 94px;
+}
+
+.title {
+    font-size: 22px;
+}
+
+.dreamshare__step {
+    max-width: 236px;
+    width: 100%;
+    padding: 205px 20px 16px 20px;
+    border-radius: 3px;
+}
+
+.dreamshare__step2 {
+    padding-top: 255px;
+}
+
+.dreamshare__step {
+    background-position: -157px 0;
+}
+
+.dreamshare__subtitle {
+    margin-top: 43px;
+    line-height: 16px;
+}
+
+.dreamshare__subtitle-step2 {
+    margin-top: 13px;
+}
+
+.dreamshare__p {
+    font-size: 14px;
+    margin-top: 28px;
+    line-height: 14px;
+}
+
+.dreamshare__p-step2 {
+    margin-top: 22px;
+}
+
+/********************
+        Meeting
+********************/
+.meeting {
+    padding-top: 94px;
+}
+
+.meeting__partners{
+    margin-top: 35px;
+    padding: 0 128px;
+    flex-wrap: wrap;
+}
+
+.meeting__partner {
+    max-width: 236px;
+    height: 236px; //Поправити
+    // border: 1px solid yellow;
+}
+
+.partner1 {
+    order: 1;
+}
+
+.partner2 {
+    order: 3;
+    margin-top: 22px;
+}
+.partner3 {
+    order: 2;
+}
+
+.partner4 {
+    order: 4;
+    margin-top: 22px;
+}
+
+.partner3 {
+    .partner__p {
+        margin-top: 28px;
+    }
+}
+
+.meeting__button {
+    font-size: 14px;
+    padding: 8px 18px 8px 23px;
+    border-radius: 40px;
+    margin-top: 12px;
+}
+
+/*********************
+        Holiday
+*********************/
+.holiday {
+    margin-top: 94px;
+}
+
+.holiday article div {
+    font-size: 22px;
+}
+
+/*Фото до розідлу активності*/
+
+.activity__img1 {
+    max-width: 236px;
+}
+
+.activity__img2 {
+    max-width: 236px;
+}
+
+.activity__img3 {
+    max-width: 236px;
+}
+
+.activity__img4 {
+    max-width: 236px;
+}
+
+.activity__img5 {
+    max-width: 492px;
+}
+
+.activity__img6 {
+    max-width: 492px;
+
+}
+
+.activity__img7 {
+    max-width: 236px;
+}
+
+/********** Holiday Form *********/
+.holiday__form {
+    padding-top: 95px;
+    padding-bottom: 100px;
+}
+
+/********************
+        Footer
+********************/
+.footer {
+    .container {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+.footer__company {
+    margin: 0 56px 0 107px;
+}
+
+.footer__img {
+    p {
+        padding-right: 7px;
+        margin-bottom: 5px;
+    }
+}
+
+
+
+ }

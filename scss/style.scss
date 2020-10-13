@@ -1,0 +1,581 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/********************
+        Шрифти
+********************/
+@font-face {
+    font-family: "Montserrat-Bold";
+    src: url(../fonts/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Montserrat-Regular";
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Roboto-Light";
+    src: url(../fonts/Roboto-Light.ttf);
+}
+
+/********************
+        Змінні
+********************/
+$fontBold: "Montserrat-Bold";
+$fontRegular: "Montserrat-Regular";
+$fontLight: "Roboto-Light";
+$colorWhite: #FFFFFF;
+$colorBlack: #444444;
+
+
+/********************
+    Спадкування
+********************/
+%holiday-img-short{
+    max-width: 300px;
+    width: 100%;
+    height: 310px;
+    // height: 100%;
+}
+
+%holiday-img-long {
+    max-width: 620px;
+    width: 100%;
+    height: 310px;
+}
+
+
+/************************************************************************************************************************
+                                                 HEADER
+************************************************************************************************************************/
+.header {
+    background: url(../img/header.png);
+    background-position: 0 11%;
+    background-size: cover;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+    max-width: 100%;
+    width: 100%;
+    height: 700px;
+}
+
+.container {
+    max-width: 940px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header__menu {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-right: 42px;
+}
+
+.header__logo {
+    margin-top: 6px;
+}
+
+.header__logo {
+    p {
+        font-family: $fontBold;
+        color: #FFFFFF;
+        font-size: 20px;
+    }
+}
+
+.header__form {
+    display: flex;
+    font-family: $fontRegular;
+}
+
+.header__link {
+    color: $colorWhite;
+    text-decoration: none;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.header__link-login {
+    margin-right: 20px;
+}
+
+.header__link-active {
+    border: 2px solid #ffffff;  
+    border-radius: 40px;
+    padding: 8px 15px;
+}
+
+.header__center {
+    padding: 146px 170px 0 170px;
+}
+
+.header__title {
+    font-family: $fontBold;
+    color: $colorWhite;
+    color: #FFFFFF;
+    font-size: 52px;
+    text-align: center;
+}
+
+.header__subtitle {
+    font-family: $fontLight;
+    margin-top: 26px;
+    margin-bottom: 31px;
+    font-size: 24px;
+    text-align: center;
+    color: #F7F3F2;
+}
+
+.header__button {
+    font-family: $fontBold;
+    background: #FF4E50;
+    color: #FFFFFF;
+    display: flex;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 40px;
+    padding: 11px 20px;
+    margin: 0 auto;
+    border: none;
+}
+
+/******************************
+        Dreamshare
+******************************/
+.dreamshare {
+    padding-top: 90px;
+    // border: 1px solid yellow;
+}
+
+.title {
+    font-family: $fontBold;
+    font-size: 26px;
+    text-align: center; 
+    color: $colorBlack;
+}
+
+.dreamshare__mainStep {
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dreamshare__step {
+    max-width: 300px;
+    width: 100%;
+    height: 400px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding: 218px 25px 21px 25px;
+    border-radius: 3px;
+    background-size: contain;
+}
+
+.dreamshare__step2 {
+    padding-top: 248px;
+}
+
+.dreamshare__step1 {
+    background: url(../img/step1.png);
+}
+
+.dreamshare__step2 {
+    background: url(../img/step2.png);
+}
+
+.dreamshare__step3 {
+    background: url(../img/step3.png);
+}
+
+.dreamshare__step {
+    background-position: center;
+    background-size: cover;
+}
+
+.dreamshare__button {
+    font-family: $fontRegular;
+    color: $colorWhite;
+    font-size: 10px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    letter-spacing: 2px;
+    background: #FF4E50;
+    border-radius: 40px;
+    padding: 5px 13px 3px 13px;
+    border: none;
+}
+
+.dreamshare__subtitle {
+    font-family: $fontBold;
+    margin-top: 20px;
+    font-size: 24px;
+    color: #FFFFFF;
+    line-height: 26px;
+}
+
+.dreamshare__subtitle-step2 {
+    margin-top: 23px;
+    font-size: 24px;
+}
+
+.dreamshare__p {
+    font-family: $fontLight;
+    font-size: 14px;
+    margin-top: 28px;
+    color: #E3E3E3;
+    line-height: 14px;
+}
+
+.dreamshare__p-step2 {
+    margin-top: 18px;
+}
+
+/********************
+        Meeting
+********************/
+.meeting {
+    padding-top: 88px;
+}
+
+.meeting__partners{
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.meeting__partners div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+.meeting__partner {
+    max-width: 220px;
+    width: 100%;
+    height: 205px; //Поправити
+    text-align: center;    
+}
+
+.partner1 {
+    order: 1;
+}
+
+.partner2 {
+    order: 2;
+}
+.partner3 {
+    order: 3;
+}
+
+.partner4 {
+    order: 4;
+}
+
+.partner__img {
+    max-width: 120px;
+    width: 100%;
+    max-height: 120px;
+    height: 100%;
+    border-radius: 50%;
+    position: relative;
+    padding: 0 5px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.partner__img div {
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    border: 3px solid white;
+}
+
+.partner__img div svg {
+    margin: 0 auto;
+}
+
+/**********Заливка інструментів до розділу партнери**********/
+
+.partner__img-1 div {
+    background: #FF4E50;;
+}
+
+.partner__img-2 div {
+    background: #19D4CA;;;
+}
+
+.partner__img-3 div {
+    background: #FFA710;
+}
+
+.partner__img-4 div {
+    background: #667DF3;
+}
+
+/**********Фото до розділу партнери**********/
+.partner__img-1 {
+    background: url(../img/partner1.png);
+}
+
+.partner__img-2 {
+    background: url(../img/partner2.png);
+}
+
+.partner__img-3 {
+    background: url(../img/partner3.png);
+}
+
+.partner__img-4 {
+    background: url(../img/partner4.png);
+}
+
+.partner__img {
+    background-position: center;
+    background-size: cover;
+}
+
+.partner__title {
+    font-family: $fontBold;
+    font-size: 14px;
+    margin-top: 17px;
+    text-align: center;
+}
+
+.partner__p {
+    font-family: $fontLight;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+    color: #666666;
+    margin-top: 22px;
+}
+
+.meeting__button {
+    font-family: $fontBold;
+    font-size: 14px;
+    padding: 12px 19px 11px 24px;
+    border-radius: 40px;
+    background: white;
+    border: 2px solid #FF4E50;
+    color: #FF4E50;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 52px;
+}
+
+/*********************
+        Holiday
+*********************/
+.holiday {
+    margin-top: 86px;
+    text-align: center;
+}
+
+.holiday article div {
+    font-family: $fontBold;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.holiday article div p {
+    margin: 0 auto;
+}
+
+.holiday__activity {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 35px;
+}
+
+/*Фото до розідлу активності*/
+
+.activity__img1 {
+    @extend %holiday-img-short;
+    background: url(../img/actives.png);
+    text-align: center;
+}
+
+.activity__img2 {
+    @extend %holiday-img-short;
+    background: url(../img/health.png);
+}
+
+.activity__img3 {
+    @extend %holiday-img-short;
+    background: url(../img/extreme.png);
+}
+
+.activity__img4 {
+    @extend %holiday-img-short;
+    background: url(../img/games.png);
+    margin-top: 20px;
+}
+
+.activity__img5 {
+    @extend %holiday-img-long;
+    background: url(../img/culture.png);
+    margin-top: 20px;
+    text-align: center;
+}
+
+.activity__img6 {
+    @extend %holiday-img-long;
+    background: url(../img/relaxation.png);
+    margin-top: 20px;
+}
+
+.activity__img7 {
+    @extend %holiday-img-short;
+    background: url(../img/trevelling.png);
+    margin-top: 20px;
+}
+
+.holiday div {
+    background-position: center;
+    background-size: cover;
+}
+
+/********** Holiday Form *********/
+.holiday__form {
+    padding-top: 89px;
+    padding-bottom: 100px;
+}
+
+.holiday__subtitle {
+    font-family: $fontLight;
+    font-size: 18px;
+    text-align: center;
+    color: #666666;
+    margin-top: 48px;
+}
+
+.holiday__register {
+    input {
+        max-width: 299px;
+        width: 100%;
+        height: 40px;
+        padding-top: 14px;
+        padding-bottom: 10px;
+        padding-left: 14px;
+        font-family: $fontLight;
+        font-size: 14px;
+        color: #999999;
+        border: 1px solid #999999;
+    }
+}
+
+.holiday__register {
+    margin-top: 19px;
+    .holiday__button {
+        font-family: $fontBold;
+        font-size: 14px;
+        color: #FFFFFF;
+        margin-left: 7px;
+        background: #FF4E50;
+        border-radius: 40px;
+        padding: 14px 28px 10px 30px;
+        border: none;
+        outline: none;
+    }
+}
+
+/********************
+        Footer
+********************/
+.footer {
+    border-top: 3px solid #FF4E50;
+    padding-top: 38px;
+}
+
+.footer {
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.footer__nav {
+    display: flex;
+    margin-top: 3px;
+}
+
+.footer__nav ul {
+    list-style-type: none;
+}
+
+.footer__company {
+    margin: 0 123px;
+}
+
+.company ul {
+    margin-top: 10px;
+}
+
+.company {
+    ul {
+        li {
+            margin-top: 0;
+        }
+    }
+}
+
+.footer__link {
+    text-decoration: none;
+    font-family: $fontBold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #444444;
+}
+
+.footer__link-active {
+    font-family: $fontRegular;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FF4E50;
+}
+
+.company__link {
+    font-family: $fontLight;
+    font-size: 14px;
+    line-height: 26px;
+    color: #999999;
+    margin-top: 5px;
+    text-decoration: none;
+}
+
+.footer__img {
+    padding-top: 4px;
+}
+
+.footer__img {
+    p {
+        font-family: $fontBold;
+        font-size: 10px;
+        line-height: 12px;
+        color: #CCCCCC;
+        text-align: right;
+        padding-right: 7px;
+        margin-bottom: 5px;
+    }
+}
+
+
+
+
